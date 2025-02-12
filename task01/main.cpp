@@ -1,8 +1,8 @@
-#include "util.h"
+п»ї#include "util.h"
 #include "sort.h"
 
 int main() {
-	//рефрижеротор
+	//СЂРµС„СЂРёР¶РµСЂРѕС‚РѕСЂ
 	int size = 20;
 	//int m[]{ 1,2,3,10,5,6,7,8,9,4 };
 	int* m = new int[size];
