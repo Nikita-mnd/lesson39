@@ -1,14 +1,15 @@
 #include "util.h"
 #include "sort.h"
-//#define SIZE 20
+
 int main() {
 
-	int size = 20;
+	int size = 10;
+	//int m[]{ 1,2,3,10,5,6,7,8,9,4 };
 	int* m = new int[size];
 
 	init(m, size, 0, 100);
 
-	cout << "m: " << convert(m,size);
+	cout << "m: " << convert(m, size) << endl;;
 
 	 bubble_sort( m,  size);
 

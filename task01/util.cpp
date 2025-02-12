@@ -13,7 +13,7 @@ string convert(int* m, int size) {
 }
 
 void init(int* m,int size,int a,int b) {
-	time((0));
+	time(0);
 	for (int i = 0; i <= size; i++) {
 		m[i] = rand() % (b - a + 1) + a;
 	}
