@@ -29,13 +29,11 @@ void selected_sort(int* m, int size) {
 			if (m[i] < m[index]) {
 				index = i;
 			}
-			count++;
 		}
 
 		int t = m[j];
 		m[j] = m[index];
 		m[index] = t;
 	}
-	cout << count;
 }
 
