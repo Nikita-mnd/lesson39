@@ -1,7 +1,6 @@
 #include "sort.h"
 
 void bubble_sort(int* m, int size) {
-	int count = 0;
 	for (int i = 0; i <= size; i++) {
 		bool flag = true;
 		int sizi = size - i;
@@ -12,11 +11,31 @@ void bubble_sort(int* m, int size) {
 				flag = false;
 				swap(m[j], m[j + 1]);
 			}
-			count++;
 		}
 		if (flag) {
 			break;
 		}
 	}
-	cout << count;
+
 }
+
+void selected_sort(int* m, int size) {
+	
+	for (int j = 0; j < size; j++) {
+
+		int index = j;
+		for (int i =j + 1; i <= size; i++) {
+
+			if (m[i] < m[index]) {
+				index = i;
+			}
+
+		}
+
+		int t = m[j];
+		m[j] = m[index];
+		m[index] = t;
+	}
+
+}
+

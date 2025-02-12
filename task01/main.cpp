@@ -3,7 +3,7 @@
 
 int main() {
 
-	int size = 10;
+	int size = 20;
 	//int m[]{ 1,2,3,10,5,6,7,8,9,4 };
 	int* m = new int[size];
 
@@ -11,7 +11,7 @@ int main() {
 
 	cout << "m: " << convert(m, size) << endl;;
 
-	 bubble_sort( m,  size);
+	 selected_sort( m,  size);
 
 	 cout << "m: " << convert(m, size);
 
