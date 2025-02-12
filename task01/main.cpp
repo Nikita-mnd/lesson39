@@ -15,6 +15,5 @@ int main() {
 
 	 cout << "m: " << convert(m, size);
 
-
 	return 0;
 }

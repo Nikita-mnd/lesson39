@@ -20,7 +20,7 @@ void bubble_sort(int* m, int size) {
 }
 
 void selected_sort(int* m, int size) {
-	
+	int count = 0;
 	for (int j = 0; j < size; j++) {
 
 		int index = j;
@@ -29,13 +29,13 @@ void selected_sort(int* m, int size) {
 			if (m[i] < m[index]) {
 				index = i;
 			}
-
+			count++;
 		}
 
 		int t = m[j];
 		m[j] = m[index];
 		m[index] = t;
 	}
-
+	cout << count;
 }
 
